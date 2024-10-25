@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
 </head>
+
 <body>
-    
+    <header>
+        <a href="index.html"><img src="../Multimedia/new_cn_logo.svg" alt="logo"></a>
+        <h1>Create an Account</h1>
+    </header>
+
+    <section id="register">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <br>
+                <label for="fullname">Full Name:</label>
+                <input type="text" name="fullname" id="fullname" required>
+                <Br></Br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <Br></Br>
+                <label for="newusername">Username:</label>
+                <input type="text" name="newusername" id="newusername" required>
+                <Br></Br>
+                <label for="newpassword">Password:</label>
+                <input type="password" name="newpassword" id="newpassword" required>
+                <Br></Br>
+                <label for="usertype">User Type:</label>
+                <select id="usertype" name="usertype" required>
+                    <option value="" disabled selected>select user type</option>
+                    <option value="student">Student</option>
+                    <option value="instructor">Instructor</option>
+                </select>
+                <Br></Br>
+                <label for="selectcourse">Select Course:</label>
+                <select id="selectcourse" name="selectcourse" required>
+                    <option value="course1">Course 1 - Web Development</option>
+                    <option value="course2">Course 2 - Data Science Fundamentals</option>
+                    <option value="course3">Course 3 - Android development</option>
+                    <option value="course4">Course 4 - Digital Marketing Mastery</option>
+                </select>
+                <Br></Br>
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+    </section>
 </body>
+
 </html>
